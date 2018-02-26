@@ -26,7 +26,7 @@ LoadVideo::LoadVideo(std::string path, int w,int h,bool c,int index)
     }
 
     else if(camera==true) {
-        this->c.open(0); // open the default camera
+        this->c.open(index); // open the default camera
         cv::Mat img;
         this->c >> img;
         vpImageConvert::convert(img, this->frame);

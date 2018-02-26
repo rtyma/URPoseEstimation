@@ -21,7 +21,7 @@ void displayImage(vpImage<unsigned char> image)
 
 int main() {
 
-    std::unique_ptr<LoadVideo> lv = std::make_unique<LoadVideo>("./teabox/teabox.mpg",W,H,false,0);
+    std::unique_ptr<LoadVideo> lv = std::make_unique<LoadVideo>("./teabox/teabox.mpg",W,H,true,1);
     std::unique_ptr<Pose> p = std::make_unique<Pose>("detection-config.xml");
     std::unique_ptr<LoadParameters> lp = std::make_unique<LoadParameters>("./teabox/teabox");
     lp->Load(p->tracker);
