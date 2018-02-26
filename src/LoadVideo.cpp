@@ -53,3 +53,8 @@ void LoadVideo::Refresh()
         vpImageConvert::convert(img, this->frame);
     }
 }
+
+void LoadVideo::Close()
+{
+    this->video.close();
+}

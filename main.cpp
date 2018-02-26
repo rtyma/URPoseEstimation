@@ -31,6 +31,14 @@ int main() {
 
     lv->Refresh();
 
+    while(!vpDisplay::getClick(lv->frame,false))
+    {
+        lv->Refresh();
+
+        vpDisplay::display(lv->frame);
+        vpDisplay::flush(lv->frame);
+    }
+
     std::unique_ptr<Train> t = std::make_unique<Train>(lv->frame);
     t->BuildReference(lv->frame,p->tracker,"./teabox/teabox.init",true);
 
@@ -69,6 +77,7 @@ int main() {
 
         if(vpDisplay::getClick(lv->frame,false))
         {
+            lv->Close();
             break;
         }
     }

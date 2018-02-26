@@ -23,6 +23,8 @@ public:
     LoadVideo(std::string path, int w,int h, bool camera, int index);
     void Refresh();
 
+    void Close();
+
     vpImage<unsigned char>  getFrame();
 
     int width,height;
