@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(${VISP_INCLUDE_DIRS})
 
-set(SOURCE_FILES main.cpp src/DetectKeypoints.cpp inc/DetectKeypoints.h src/Pose.cpp inc/Pose.h src/LoadVideo.cpp inc/LoadVideo.h src/Train.cpp inc/Train.h src/LoadParameters.cpp inc/LoadParameters.h src/Control.cpp inc/Control.h src/FourPointsPose.cpp inc/FourPointsPose.h)
+set(SOURCE_FILES main.cpp src/DetectKeypoints.cpp inc/DetectKeypoints.h src/Pose.cpp inc/Pose.h src/LoadVideo.cpp inc/LoadVideo.h src/Train.cpp inc/Train.h src/LoadParameters.cpp inc/LoadParameters.h src/Control.cpp inc/Control.h src/FourPointsPose.cpp inc/FourPointsPose.h src/RunPose.cpp inc/RunPose.h)
 add_executable(UR_PoseEstimation ${SOURCE_FILES})
 target_link_libraries(UR_PoseEstimation ${VISP_LIBRARIES})

@@ -11,10 +11,10 @@
     <pyramid_lvl>3</pyramid_lvl> 
   </klt>
   <camera>
-    <u0>325.66776</u0> 
-    <v0>243.69727</v0> 
-    <px>839.21470</px> 
-    <py>839.44555</py> 
+    <u0>306.356</u0> 
+    <v0>242.760</v0> 
+    <px>574.896</px> 
+    <py>573.264</py> 
   </camera>
   <face>
     <angle_appear>70</angle_appear> 
